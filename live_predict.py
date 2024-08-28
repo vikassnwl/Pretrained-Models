@@ -10,7 +10,7 @@ if picture:
     # st.image(picture)
     with open("test/captured_image.png", "wb") as f:
         f.write(picture.getbuffer())
-    st.success("Picture saved as captured_image.png")
+    # st.success("Picture saved as captured_image.png")
     model = ResNet50(weights="imagenet")
     model.predict(["test/captured_image.png"])
     # st.write(model.labels[0])
